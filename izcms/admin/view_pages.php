@@ -54,8 +54,8 @@
         <td>{$pages['page_name']}</td>
         <td>{$pages['date']}</td>
         <td>{$pages['content']}</td>
-        <td><a href=\"edit_page.php?pid={$pages['id']}\" class='edit'>Edit</a></td>
-        <td><a href=\"delete_page.php?pid={$pages['id']}&pname={$pages['page_name']}\">Delete</a></td>
+        <td><a href=\"edit_page.php?sid={$pages['id']}\" class='edit'>Edit</a></td>
+        <td><a href=\"delete_page.php?sid={$pages['id']}&pname={$pages['page_name']}\">Delete</a></td>
         </tr>";
             }
         }else{
