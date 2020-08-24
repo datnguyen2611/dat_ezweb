@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="627efe63-6d38-4905-a459-fc174005be29" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/izcms/admin/delete_page.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/izcms/admin/edit_page.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/izcms/single.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/izcms/admin/edit_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/izcms/admin/edit_category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/izcms/admin/view_pages.php" beforeDir="false" afterPath="$PROJECT_DIR$/izcms/admin/view_pages.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/izcms/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/izcms/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +63,7 @@
       <workItem from="1598238278730" duration="16000" />
       <workItem from="1598238367514" duration="6000" />
       <workItem from="1598238560753" duration="761000" />
-      <workItem from="1598239607002" duration="13663000" />
+      <workItem from="1598239607002" duration="17020000" />
     </task>
     <servers />
   </component>
