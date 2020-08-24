@@ -21,6 +21,7 @@
         </thead>
 
         <?php
+
         if (isset($_GET['sort'])){
             switch ($_GET['sort']){
                 case 'cat':
@@ -47,12 +48,14 @@
         $r = mysqli_query($dbc, $q);
         confirm_query($r, $q);
         while ($cats = mysqli_fetch_array($r, MYSQLI_ASSOC)) {
-            echo "<tr>
+//            print_r($cats);
+//            die();
+            echo "<tr>       
         <td>{$cats['name']}</td>
         <td>{$cats['position']}</td>
         <td>{$cats['names']}</td>
-        <td><a href=\"edit_category.php?cid={$cats[id]}\" class='edit'>Edit</a></td>
-        <td><a href=\"delete_category.php?cid={$cats[id]}\">Delete</a></td>
+        <td><a href=\"edit_category.php?cid={$cats['id']}\" class='edit'>Edit</a></td>
+        <td><a href=\"delete_category.php?cid={$cats['id']}&name={$cats['name']}\">Delete</a></td>
         </tr>";
         } ?>
         <tbody>
