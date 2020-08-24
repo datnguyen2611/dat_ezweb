@@ -14,8 +14,8 @@
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $errors = [];
-            if (empty($_POST['category'])) {
-                $errors[] = "category";
+            if (empty($_POST['content'])) {
+                $errors[] = "content";
             } else {
                 $ca_name = mysqli_real_escape_string($dbc, strip_tags($_POST['category']));
             }
@@ -46,11 +46,11 @@
             <fieldset> Add category</fieldset>
 
             <div>
-                <label for=""> category name:</label>
+                <label for=""> Page name:</label>
                 <?php if (isset($errors) && in_array('category', $errors)) {
                     echo "<p class='warning'>fill the category name";
                 } ?>
-                <input type="text" name="category" id="category" value="<?php
+                <input type="text" name="content" id="category" value="<?php
                 if (isset($_POST['category'])) echo strip_tags($_POST['category']);
                 ?>">
             </div>

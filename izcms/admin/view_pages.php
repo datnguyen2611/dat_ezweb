@@ -9,7 +9,7 @@
         <thead>
         <tr>
             <th>
-                <a href="view_categories.php?sort=cat">Pages</a>
+                <a href="view_categories.php?sort=pg">Pages</a>
             </th>
             <th>
                 <a href="view_categories.php?sort=on">Posted on</a>
@@ -27,7 +27,7 @@
 
         if (isset($_GET['sort'])) {
             switch ($_GET['sort']) {
-                case 'cat':
+                case 'pg':
                     $order_by = 'page_name';
                     break;
                 case 'pos':
@@ -54,8 +54,8 @@
         <td>{$pages['page_name']}</td>
         <td>{$pages['date']}</td>
         <td>{$pages['content']}</td>
-        <td><a href=\"edit_pages.php?cid={$pages['id']}\" class='edit'>Edit</a></td>
-        <td><a href=\"delete_pages.php?cid={$pages['id']}&name={$pages['page_name']}\">Delete</a></td>
+        <td><a href=\"edit_page.php?pid={$pages['id']}\" class='edit'>Edit</a></td>
+        <td><a href=\"delete_page.php?pid={$pages['id']}&pname={$pages['page_name']}\">Delete</a></td>
         </tr>";
             }
         }else{
