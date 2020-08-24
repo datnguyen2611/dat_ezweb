@@ -4,7 +4,7 @@
 <?php include('../includes/sidebar-admin.php'); ?>
 
 <div id="content">
-    <h2>task manager </h2>
+    <h2>task manager category </h2>
     <table>
         <thead>
         <tr>

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="627efe63-6d38-4905-a459-fc174005be29" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/izcms/admin/delete_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/izcms/admin/delete_category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/izcms/admin/view_categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/izcms/admin/view_categories.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +61,7 @@
       <workItem from="1598238278730" duration="16000" />
       <workItem from="1598238367514" duration="6000" />
       <workItem from="1598238560753" duration="761000" />
-      <workItem from="1598239607002" duration="4014000" />
+      <workItem from="1598239607002" duration="6242000" />
     </task>
     <servers />
   </component>
