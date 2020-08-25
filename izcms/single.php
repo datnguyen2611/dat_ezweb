@@ -2,6 +2,7 @@
 include('includes/mysqli_connect.php');
 include('includes/functions.php');
 
+
 if (isset($_GET['pid']) && filter_var($_GET['pid'], FILTER_VALIDATE_INT, array('min_range' => 1))) {
     $pid = $_GET['pid'];
     $q = "SELECT p.page_name,p.id, p.content AS content,
@@ -21,9 +22,10 @@ if (isset($_GET['pid']) && filter_var($_GET['pid'], FILTER_VALIDATE_INT, array('
         $title = "{$page['page_name']}";
         $posts[] = [
             'name' => $page['page_name'],
-            'content' =>$page['content'],
+            'content' => $page['content'],
             'author' => $page['name'],
-            'post_on' =>$page['date'],
+            'post_on' => $page['date'],
+            'user_id' => $page['user_id']
         ];
     } else {
         echo " No page curent";
@@ -32,21 +34,26 @@ if (isset($_GET['pid']) && filter_var($_GET['pid'], FILTER_VALIDATE_INT, array('
     redirect_to();
 }
 include('includes/header.php');
-include('includes/sidebar-a.php'); ?>
+include('includes/sidebar-a.php');
+ ?>
 <div id="content">
     <?php
-        foreach ($posts as $post){
-            echo "
+    foreach ($posts as $post) {
+        echo "
                 <div class='post'>
                         
                     <h2>{$post['name']}</h2>
-                    <p>{$post['content']}</p>
-                    <p class='meta'><strong>Posted by :</strong> {$post['name']} <strong>On:</strong> {$post['post_on'] } </p>
+                    <p>".the_content($post['content'])."</p>
+                    <p class='meta'><strong>Posted by :</strong>
+                     <a href='author.php?aid={$post['user_id']}'>{$post['author']}</a>
+                      <strong>On:</strong> 
+                      {$post['post_on'] } 
+                      </p>
                 </div>
                 ";
-        }
-
+    } //end foreach
     ?>
+    <?php include ('includes/comment_form.php')?>
 </div>
 
 <?php include('includes/sidebar-b.php'); ?>

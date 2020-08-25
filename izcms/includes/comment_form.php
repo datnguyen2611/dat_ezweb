@@ -48,6 +48,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       } */
 
     if(empty($errors)) {
+//        $pid = $_GET['pid'];
         // Neu ko co loi xay ra, them comment vao csdl
         $q = "INSERT INTO comments (page_id,author, email, comment, comment_date) VALUES ({$pid},'{$name}','{$e}','{$comment}', NOW())";
         $r = mysqli_query($dbc,$q);
@@ -68,7 +69,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 ?>
 <?php
     // Hien thi comment tu csdl
-    $q = "SELECT comment_id, author, comment, DATE_FORMAT(comment_date, '%b %d, %y') AS date FROM comments WHERE page_id = {$pid}";
+    $q = "SELECT id, author, comment, DATE_FORMAT(comment_date, '%b %d, %y') AS date FROM comments WHERE page_id = {$pid}";
     $r = mysqli_query($dbc, $q);
     confirm_query($r, $q);
     if(mysqli_num_rows($r) > 0) {
