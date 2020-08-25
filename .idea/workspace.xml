@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="627efe63-6d38-4905-a459-fc174005be29" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/izcms/author.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/izcms/thankyou.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/izcms/admin/view_pages.php" beforeDir="false" afterPath="$PROJECT_DIR$/izcms/admin/view_pages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/izcms/includes/comment_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/izcms/includes/comment_form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/izcms/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/izcms/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/izcms/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/izcms/single.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/izcms/author.php" beforeDir="false" afterPath="$PROJECT_DIR$/izcms/author.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +64,7 @@
       <workItem from="1598238560753" duration="761000" />
       <workItem from="1598239607002" duration="21963000" />
       <workItem from="1598295318306" duration="588000" />
-      <workItem from="1598321639946" duration="13909000" />
+      <workItem from="1598321639946" duration="18763000" />
     </task>
     <servers />
   </component>
