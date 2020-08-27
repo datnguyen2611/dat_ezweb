@@ -5,10 +5,6 @@ include('includes/mysqli_connect.php');
 include('includes/functions.php');
 include('includes/sidebar-a.php'); ?>
 <?php
-//ini_set("SMTP","ssl://smtp.gmail.com");
-//ini_set("smtp_port","465");
-//ini_set('sendmail_from', 'datnguyen26111997@gmail.com');
-//phpinfo();
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$errors = [];
 
@@ -50,18 +46,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			$a = md5(uniqid(rand(), true));
 			// insert
 
-			$q
-				= "INSERT INTO users (first_name,last_name,email,password, active , register_date) VALUES ('{$fn}','{$ln}','{$e}',SHA1('$p'),'{$a}',NOW())";
+			$q = "INSERT INTO users (first_name,last_name,email,password, active , register_date) VALUES ('{$fn}','{$ln}','{$e}',SHA1('$p'),'{$a}',NOW())";
 			$r = mysqli_query($dbc, $q);
 			confirm_query($r, $q);
 			if (mysqli_affected_rows($dbc)) {
-				$body = 'tks for register ';
-				$body .= BASE_URL . "admin/active.php?x=" . urlencode($e) . " &y={$a}";
-				if (mail($_POST['email'], 'Kich hoat tai khoan', $body, 'FROM: datnguyen26111997@gmail.com')) {
-						$message=  "<p class='success'>Nhan vao link de dang ki tai khoan</p>";
-				}else{
-					$message = "<p class='warning'> khoong the gui email cho ban</p>";
-				}
+				$body = BASE_URL."admin/active.php?x=".urlencode($e)."&y={$a}";
+				echo "<br>tks for register here is your account click here to active :</br><a class='success' href='{$body}'> {$body}</a></p>";
 			} else {
 					$message = "<p class='warning'> The email  was already used</p>";
 			}
@@ -77,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <div id="content">
     <h2>Register</h2>
 	<?php if (!empty($message)) echo $message; ?>
-    <form action="register.php" method="post">
+    <form action="register.php" method="POST">
         <fieldset>
             <legend>Register</legend>
             <div>
