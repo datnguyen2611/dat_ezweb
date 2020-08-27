@@ -1,7 +1,6 @@
 <div id="footer">
     <ul class="footer-links">
-       <?php 
-       
+       <?php
         if(isset($_SESSION['user_level'])) {
             // Neu co SESSION
             switch($_SESSION['user_level']) {
