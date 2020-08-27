@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="627efe63-6d38-4905-a459-fc174005be29" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/izcms/contact.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/izcms/author.php" beforeDir="false" afterPath="$PROJECT_DIR$/izcms/author.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/izcms/includes/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/izcms/includes/functions.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +66,10 @@
       <workItem from="1598238560753" duration="761000" />
       <workItem from="1598239607002" duration="21963000" />
       <workItem from="1598295318306" duration="588000" />
-      <workItem from="1598321639946" duration="18763000" />
+      <workItem from="1598321639946" duration="19589000" />
+      <workItem from="1598454486639" duration="23000" />
+      <workItem from="1598454518138" duration="16000" />
+      <workItem from="1598492918298" duration="7236000" />
     </task>
     <servers />
   </component>
@@ -79,18 +84,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1598238834947" />
-    <state x="522" y="282" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1598238547156">
+    <state x="522" y="282" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1598454507709">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="522" y="282" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1536.824@0.0.1536.824" timestamp="1598238547156" />
-    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1598238545508">
+    <state x="522" y="282" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1536.824@0.0.1536.824" timestamp="1598454507709" />
+    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1598454506297">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1598238545508" />
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1598321738855">
+    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1598454506297" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1598492998239">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1598321738855" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1598492998239" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1598267006728">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

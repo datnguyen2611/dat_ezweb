@@ -133,7 +133,7 @@
             $page = $_GET['p'];
         } else {
             // Nếu biến p không có, sẽ truy vấn CSDL để tìm xem có bao nhiêu page để hiển thị
-            $q = "SELECT COUNT(page_id) FROM pages";
+            $q = "SELECT COUNT(id) FROM pages";
             $r = mysqli_query($dbc, $q);
             confirm_query($r, $q);
             list($record) = mysqli_fetch_array($r, MYSQLI_NUM);
