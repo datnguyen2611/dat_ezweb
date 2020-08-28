@@ -19,7 +19,7 @@ include('includes/sidebar-a.php'); ?>
 		}
 
 		if (empty($errors)){
-			$q = "SELECT id,first_name,user_level FROM  users WHERE email = '{$e}' AND  password = SHA1($p) AND active IS NULL LIMIT 1 ";
+			$q = "SELECT id,first_name,user_level FROM  users WHERE email = '{$e}' AND  password = SHA1('$p') AND active IS NULL LIMIT 1 ";
 			$r = mysqli_query($dbc, $q);
 			confirm_query($r, $q);
 			if (mysqli_num_rows($r) == 1){
@@ -27,6 +27,7 @@ include('includes/sidebar-a.php'); ?>
 					$_SESSION['id'] = $id;
 					$_SESSION['first_name'] = $first_name;
 					$_SESSION['user_level'] = $user_level;
+					redirect_to();
 			}else{
 				$message = "<p class='warning'> email or password is errors</p>";
 			}
