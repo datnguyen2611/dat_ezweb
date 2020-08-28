@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			confirm_query($r, $q);
 			if (mysqli_affected_rows($dbc)) {
 				$body = BASE_URL."admin/active.php?x=".urlencode($e)."&y={$a}";
-				echo "<br>tks for register here is your account click here to active :</br><a class='success' href='{$body}'> {$body}</a></p>";
+				echo "<br>Thanks for register here is your account click here to active :</br><a class='success' href='{$body}'> {$body}</a></p>";
 			} else {
 					$message = "<p class='warning'> The email  was already used</p>";
 			}

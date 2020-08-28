@@ -23,7 +23,7 @@ session_start(); ?>
             });
         });
     </script>
-    <script type="text/javascript" src="http://localhost/icms/js/tinymce/tiny_mce.js" ></script >
+    <script type="text/javascript" src="js/tinymce/tiny_mce.js" ></script >
         <script type="text/javascript" >
         tinyMCE.init({
         mode : "textareas",
