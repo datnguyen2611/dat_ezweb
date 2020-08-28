@@ -14,9 +14,8 @@ include('../includes/sidebar-a.php'); ?>
 			$q = "UPDATE users SET active = NULL WHERE  email = '{$e}' AND active = '{$a}' LIMIT 1";
 			$r = mysqli_query($dbc, $q);
 			confirm_query($r, $q);
-			print_r($r );
 			if (mysqli_affected_rows($dbc) == 1){
-				echo "<p class='success'>your account has been actived <a href='.BASE_URL.login.php'>click here</a> to login</p>";
+				echo "<p class='success'>your account has been actived <a href='".BASE_URL."login.php'>click here</a> to login</p>";
 			}else{
 				echo "<p class='warning'> We got some errors here please try again";
 			}
