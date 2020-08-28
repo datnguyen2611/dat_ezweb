@@ -30,7 +30,7 @@
 
     // Kiem tra xem nguoi dung da dang nhap hay chua?
     function is_logged_in() {
-        if(!isset($_SESSION['uid'])) {
+        if(!isset($_SESSION['id'])) {
             redirect_to('login.php');
         }
     } // END is_logged_in
