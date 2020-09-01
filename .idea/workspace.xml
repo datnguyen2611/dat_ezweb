@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="627efe63-6d38-4905-a459-fc174005be29" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/izcms/edit_profile.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/izcms/uploads/images/1768350e34d2bd64a19.69981057.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/izcms/uploads/images/2253050e340b219af80.89681425.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/izcms/uploads/images/2285750e34d94412e39.78952423.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/izcms/uploads/images/2378050e3386806d532.05875351.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/izcms/uploads/images/2542450e34d8d9b7380.38348062.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/izcms/uploads/images/536950e3462fdf4e66.19143061.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/izcms/uploads/images/626350e337ec9efda5.52847310.$ext" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/izcms/uploads/images/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/izcms/uploads/images/no_avatar.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/izcms/includes/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/izcms/includes/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/izcms/processor/avatar.php" beforeDir="false" afterPath="$PROJECT_DIR$/izcms/processor/avatar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/izcms/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/izcms/template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/izcms/edit_profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/izcms/edit_profile.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +75,7 @@
       <workItem from="1598665638612" duration="917000" />
       <workItem from="1598673930732" duration="1143000" />
       <workItem from="1598944473385" duration="2236000" />
-      <workItem from="1598946719735" duration="3912000" />
+      <workItem from="1598946719735" duration="6003000" />
     </task>
     <servers />
   </component>
