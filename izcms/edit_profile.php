@@ -44,13 +44,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 first_name = ?, last_name = ?, email = ?, website = ?, yahoo = ?, bio = ?
                 WHERE id = ?
                 LIMIT 1";
-        $stmt =mysqli_prepare($dbc,$q);
+        $stmt = mysqli_prepare($dbc,$q);
         mysqli_stmt_bind_param($stmt,'ssssssi',$fn,$ln,$e,$web,$yahoo,$bio,$_SESSION['id']);
         mysqli_stmt_execute($stmt) or die("MySQL : $q" . mysqli_stmt_error());
-        if (mysqli_stmt_affected_rows($dbc) > 0){
+        print_r(mysqli_stmt_affected_rows($dbc));
+        die();
+        if (mysqli_stmt_affected_rows($stmt) > 0){
             $message = "<p class='success'> update successfullyy</p>";
         }else{
-            $message = "<p class='warning'>Your update has error please try <again></again></p>";
+            $message = "<p class='warning'>Your update hasn't change please try again <again></again></p>";
         }
     }
 }
