@@ -15,7 +15,7 @@ if (isset($_GET['pid']) && filter_var($_GET['pid'], FILTER_VALIDATE_INT, array('
              ORDER BY date  ASC LIMIT 1 ";
     $r = mysqli_query($dbc, $q);
     confirm_query($r, $q);
-
+    $page_view = view_counter($pid);
     $posts = [];
     if (mysqli_num_rows($r) > 0) {
         $page = mysqli_fetch_array($r, MYSQLI_ASSOC);
@@ -48,6 +48,7 @@ include('includes/sidebar-a.php');
                      <a href='author.php?aid={$post['user_id']}'>{$post['author']}</a>
                       <strong>On:</strong> 
                       {$post['post_on'] } 
+                      <strong>Page Views :</strong>{$page_view}
                       </p>
                 </div>
                 ";
