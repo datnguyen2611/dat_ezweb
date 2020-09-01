@@ -218,7 +218,7 @@
     // Ham dung de truy xuat du lieu cua nguoi dung.
     function fetch_user($user_id) {
         global $dbc;
-        $q = "SELECT * FROM users WHERE user_id = {$user_id}";
+        $q = "SELECT * FROM users WHERE id = {$user_id}";
         $r = mysqli_query($dbc, $q); confirm_query($r, $q);
 
         if(mysqli_num_rows($r) > 0) {

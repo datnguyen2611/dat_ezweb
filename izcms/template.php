@@ -1,7 +1,7 @@
-<?php $title = ''; include('includes/header.php');?>
-<?php include('includes/mysqli_connect.php');?>
-<?php include('includes/functions.php');?>
-<?php include('includes/sidebar-a.php'); ?>
+<?php $title = ''; include('includes/header.php');
+ include('includes/mysqli_connect.php');
+ include('includes/functions.php');
+ include('includes/sidebar-a.php'); ?>
 <div id="content">
     <?php 
     

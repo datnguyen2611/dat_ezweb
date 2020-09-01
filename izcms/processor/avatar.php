@@ -79,17 +79,20 @@ include('../includes/mysqli_connect.php');?>
 
 	if(empty($errors)) {
 		// Update cSDL
-		$q = "UPDATE users SET avatar = '{$renamed}' WHERE user_id = {$_SESSION['uid']} LIMIT 1";
+		$q = "UPDATE users SET avatar = '{$renamed}' WHERE id = {$_SESSION['id']} LIMIT 1";
 		$r = mysqli_query($dbc, $q); confirm_query($r, $q);
 
 		if(mysqli_affected_rows($dbc) > 0) {
 			// Update thanh cong, chuyen huong nguoi dung ve trang edit_profile
 			redirect_to('edit_profile.php');
 		}
-	}
+	}else{
+	    echo "<a href='".BASE_URL."edit_profile.php' class='warning'> back in to edit </a>";
+    }
 
 	report_error($errors);
-	if(!empty($message)) echo $message; 
+	if(!empty($message)) echo $message;
+
 ?>
 
 
