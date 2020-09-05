@@ -1,6 +1,6 @@
 <?php
     // Xac dinh hang so cho dia chi tuyet doi
-    define('BASE_URL', 'http://localhost/php/izcms/');
+    define('BASE_URL', 'http://localhost/izcms/');
     define('LIVE', FALSE); // FALSE la dang trong qua trinh phat trien | TRUE la dang trong production
     // Kiem tra xem ket qua tra ve co dung hay khong?
     function confirm_query($result, $query) {

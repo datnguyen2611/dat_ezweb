@@ -1,6 +1,6 @@
 <?php
     // Ket noi voi CSDL
-    $dbc = mysqli_connect('localhost', 'root','','izcms');
+    $dbc = mysqli_connect('localhost', 'izweb','izweb','izweb');
     
     // neu ket noi khong thanh cong, thi bao loi ra
     if(!$dbc) {

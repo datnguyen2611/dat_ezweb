@@ -35,7 +35,7 @@
         }
     } elseif (isset($_GET['pid']) && filter_var($_GET['pid'], FILTER_VALIDATE_INT, array('min_range' => 1))) {
         $pid = $_GET['pid'];
-        $q = "SELECT P.page_name,p.content , DATE_FORMAT(p.post_on , '%b %d %y') AS date,
+        $q = "SELECT p.page_name,p.content , DATE_FORMAT(p.post_on , '%b %d %y') AS date,
         CONCAT_WS(' ' ,u.first_name,u.last_name) AS name,u.id, COUNT(c.id) AS count
         FROM users AS u INNER JOIN pages  AS p  ON u.id = p.user_id LEFT JOIN  comments AS c 
         ON p.id = c.page_id    
